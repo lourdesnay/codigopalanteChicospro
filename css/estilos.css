@@ -144,6 +144,11 @@ section{
 #Bienvenidos {
   font-family: "Montserrat";
 }
+
+.perfil{
+  display: none;
+  
+}
 #Bienvenidos img {
  
   width: 100%;
@@ -247,6 +252,11 @@ font-size: 20px;
   }
   header label{
   display: none;
+  }
+
+  .perfil{
+    display: block;
+    
   }
   #Bienvenidos ul{
     font-size: 28px;
