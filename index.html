@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html> 
+<head>
+  <title>Chicospro</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <script src="https://kit.fontawesome.com/70de63367c.js" crossorigin="anonymous"></script>
+  <script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    const menuCheckbox = document.getElementById('menu-bar');
+    const menuItems = document.querySelectorAll('.menu a');
+
+    menuItems.forEach((item) => {
+      item.addEventListener('click', () => {
+        menuCheckbox.checked = false;
+      });
+    });
+  });
+</script>
+  </head>
+<body>
+  <header>
+    <div class="contenedor">
+      <a href="#" target="_blank" class="icono"><i class="fa-solid fa-robot"></i></a> 
+      <h1>Chicospro</h1>
+         <input type="checkbox" id="menu-bar">
+        <label for="menu-bar" class="icon-menu"></label>
+        <nav class="menu">
+          <a href="#banner">Inicio</a>
+          <a href="#Bienvenidos">Acerca de Mi</a>
+          <a href="#blog">Mis proyectos</a>
+          <a href="#footer">Contactos</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+<main>
+      <section id="banner"> 
+        <img src="imagenes/promocion.jpg" width="25%" height="25%" alt="">
+      </section>
+      <section id="Bienvenidos"> 
+        <div class="contenedor">
+          <article>
+           <img src="imagenes/Fotoperfil.jpeg" width="50%" height="90%" alt="">
+          </article>
+          <article>
+           <h2>Perfil Profesional</h2>
+          <h4>Lourdes Celis</h4>
+          <br>
+            <ul>
+              <li>
+                <h3>Licenciada en Educación Integral.</h3> 
+              </li>
+              <li>
+                <h3>Especialista en Gerencia de los Procesos Educativos.</h3>
+              </li>
+              <li>
+                <h3>Ingeniera en Informática.</h3>
+              </li>
+              <li>
+                 <h3>Diplomada en Robótica.</h3>
+              </li>
+            </ul>
+          </article>
+          <article>
+            <h2>Perfil Laboral</h2>
+           <h4>Experiencia</h4>
+           <br>
+             <ul>
+               <li>
+                 <h3>Docente Remoto de Pensamiento Computacional</h3> 
+               </li>
+               <li>
+                 <h3>Facilitadora Pedagógica Digital</h3>
+               </li>
+               <li>
+                 <h3>Docente de Aula Primaria</h3>
+               </li>
+             </ul>
+           </article>
+       </div>
+      </section>
+      <h3>Proyectos Destacados</h3>
+      <section id="blog">
+          <div class="contenedor">
+            <article>
+              <img src="imagenes/valor.png" alt="">
+                 <h4>Valor Nutricional</h4>
+            </article>
+            <article>
+              <img src="imagenes/domo..png" alt="">
+              <h4>Domotizando la casa de Shrek</h4>
+            </article>
+            <article>
+              <img src="imagenes/latorre.png" alt="">
+              <h4>Iluminamos la torre Eifel</h4>
+            </article>
+            <article>
+              <img src="imagenes/monsters.png" width="25%" height="25%" alt="">
+              <h4>Animamos Monstruos</h4>
+            </article>
+          </div>
+      </section>
+</main>
+
+<footer id="footer">
+    <div class="contenedor">
+       <p class="copy">Chicospro &copy; 2023</p>
+        <div class="sociales">
+          <a class="icon-instagram" href="https://www.instagram.com/chicos.pro/?hl=es-la"></a>
+          <a class="icon-linkedin-squared" href="https://ar.linkedin.com/in/lourdes-celis-32699219a"></a>
+          <a class="icon-mail-alt" href="mailto:chicosprograman@gmail.com"></a>
+          <a class="icon-facebook-circled" href="https://www.facebook.com/profile.php?id=100094465669101"></a> 
+        </div>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      const images = document.querySelectorAll('#blog article img');
+  
+      images.forEach((image) => {
+        image.addEventListener('click', () => {
+          if (image.classList.contains('selected')) {
+            image.classList.remove('selected');
+          } else {
+            images.forEach((img) => img.classList.remove('selected'));
+            image.classList.add('selected');
+          }
+        });
+      });
+    });
+  </script>
+    
+</body>
+</html>
+
+
