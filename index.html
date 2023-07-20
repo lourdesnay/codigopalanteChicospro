@@ -7,19 +7,7 @@
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="css/fontello.css">
     <script src="https://kit.fontawesome.com/70de63367c.js" crossorigin="anonymous"></script>
-  <script>
-  window.addEventListener('DOMContentLoaded', (event) => {
-    const menuCheckbox = document.getElementById('menu-bar');
-    const menuItems = document.querySelectorAll('.menu a');
-
-    menuItems.forEach((item) => {
-      item.addEventListener('click', () => {
-        menuCheckbox.checked = false;
-      });
-    });
-  });
-</script>
-  </head>
+   </head>
 <body>
   <header>
     <div class="contenedor header">
@@ -38,7 +26,7 @@
   </header>
 <main>
       <section id="banner"> 
-        <img src="imagenes/promocion.jpg" width="25%" height="25%" alt="">
+        <img src="imagenes/promocion.jpeg"  alt="">
       </section>
       <section id="Bienvenidos"> 
         <div class="contenedor">
@@ -98,7 +86,7 @@
               <h4>Iluminamos la torre Eifel</h4>
             </article>
             <article>
-              <img src="imagenes/monsters.png" width="25%" height="25%" alt="">
+              <img src="imagenes/monsters.png" alt="">
               <h4>Animamos Monstruos</h4>
             </article>
           </div>
@@ -117,22 +105,7 @@
     </div>
   </footer>
 
-  <script>
-    window.addEventListener('DOMContentLoaded', (event) => {
-      const images = document.querySelectorAll('#blog article img');
-  
-      images.forEach((image) => {
-        image.addEventListener('click', () => {
-          if (image.classList.contains('selected')) {
-            image.classList.remove('selected');
-          } else {
-            images.forEach((img) => img.classList.remove('selected'));
-            image.classList.add('selected');
-          }
-        });
-      });
-    });
-  </script>
+  <script src="./script.js" ></script>
     
 </body>
 </html>
