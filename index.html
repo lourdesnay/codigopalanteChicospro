@@ -10,23 +10,27 @@
    </head>
 <body>
   <header>
-    <div class="contenedor header">
+    <div class="contenedor header" >
       <a href="#" class="icono"><i class="fa-solid fa-robot"></i></a> 
       <h1>Chicospro</h1>
          <input class="menuhamburguer" type="checkbox" id="menu-bar">
         <label for="menu-bar" class="icon-menu"></label>
         <nav class="menu">
-          <a href="#banner">Inicio</a>
-          <a href="#Bienvenidos">Acerca de Mi</a>
-          <a href="#blog">Mis proyectos</a>
-          <a href="#footer">Contactos</a>
+          <ul>
+            <li><a id="inicio-link" href="#banner">Inicio</a></li>
+            <li><a id="acerca-link" href="#Bienvenidos">Acerca de Mi</a></li>
+            <li><a id="proyectos-link" href="#blog">Mis proyectos</a></li>
+            <li><a id="contactos-link" href="#footer">Contactos</a></li>
+        </ul>   
         </nav>
       </div>
     </div>
   </header>
 <main>
       <section id="banner"> 
-        <img src="imagenes/promocion.jpeg"  alt="">
+        <img src="imagenes/curso.jpg"  alt="">
+        <div class="contenedor">
+      </div>
       </section>
       <section id="Bienvenidos"> 
         <div class="contenedor">
@@ -35,7 +39,7 @@
           </article>
           <article>
            <h2>Perfil Profesional</h2>
-          <h4>Lourdes Celis</h4>
+          <h4 id="per">Lourdes Celis</h4>
           <br>
             <ul>
               <li>
@@ -63,14 +67,14 @@
                <li>
                  <h3>Facilitadora Pedagógica Digital</h3>
                </li>
-               <li>
-                 <h3>Docente de Aula Primaria</h3>
+               <li id="proy">
+                 <h3 >Docente de Aula Primaria</h3>
                </li>
              </ul>
            </article>
        </div>
-      </section>
-      <h3>Proyectos Destacados</h3>
+      </section >
+      <h3 >Proyectos Destacados</h3>
       <section id="blog">
           <div class="contenedor">
             <article>

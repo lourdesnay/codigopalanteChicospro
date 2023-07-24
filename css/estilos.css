@@ -108,11 +108,11 @@ margin-left: auto;
   height: 34px;
   text-decoration: none;
   padding: 14px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(39, 92, 101, 0.5);
 }
 
 .menu a:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(157, 162, 164, 0.3);
 }
 
 #menu-bar:checked ~ .menu {
@@ -151,6 +151,16 @@ section{
   transform: translateX(-50%) trtranslateY(-50%);
   color: #fff;
 }
+#banner h2{
+  font-size: 28px;
+  margin-bottom: 20%;
+}
+
+.menu a.active {
+  color: rgb(107, 104, 104); 
+  font-weight: bold; 
+}
+
 #Bienvenidos {
   font-family: "Montserrat";
 }
@@ -262,12 +272,24 @@ margin-top: 1%;
     height: auto;
     transform: translateX(0%);
     float: flex;
-    display: flex;
+    display: flex;  
+  
   }
   .menu a{
     border: none;
   }
+
+  .menu li {
+    display: inline-block;
+    color: #fff;
+    height: 34px;
+    text-decoration: none;
+    padding: 8px;
+    border-bottom: none;
+  }
+
   header label{
+    
   display: none;
   }
 
